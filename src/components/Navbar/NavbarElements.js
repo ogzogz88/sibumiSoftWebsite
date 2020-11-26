@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
-import { primaryColor, secondaryColor } from '../../Colors'
+import { primaryColor, whiteColor, blackColor } from '../../Colors'
 
 
 export const Nav = styled.nav`
-background-color:#000;
+background-color:${({ scrollNav }) => scrollNav ? blackColor : 'transparent'};
 height:5rem;
-${'' /* margin-top:-5rem; */}
+margin-top:-5rem;
 display:flex;
 justify-context:center;
 font-size:1rem;
@@ -31,7 +31,7 @@ ${'' /* max-width:1100px; */}
 `
 
 export const NavLogo = styled(LinkRouter)`
-color:#fff;
+color:${whiteColor};
 justify-self:flex-start;
 cursor:pointer;
 display:flex;
@@ -53,7 +53,7 @@ right:0;
 transform: translate(-100%, 60%);
 font-size:1.8rem;
 cursor:pointer;
-color:#fff;
+color:${whiteColor};
 }
 
 `
@@ -77,22 +77,22 @@ height:5rem;
 `
 
 export const NavLinks = styled(LinkScroll)`
-color:#fff;
+color:${whiteColor};
 display:flex;
 align-items:center;
 text-decoration:none;
 padding:0 1rem;
 height:100%;
 cursor:pointer;
-&:active{
+&.active{
     border-bottom: 3px solid ${primaryColor};
     transition: all .2s ease-in-out;
 }
-&:hover{
+${'' /* &:hover{
     margin-bottom:0;
     border-bottom:3px solid ${primaryColor};
    transition: all .2s ease-in-out;
-}
+} */}
 
 `
 export const NavBtn = styled.nav`
@@ -110,7 +110,7 @@ border-radius:4rem;
 background: ${primaryColor};
 white-space:nowrap;
 padding:10px 22px;
-color:#fff;
+color:${whiteColor};
 font-size:1rem;
 outline:none;
 border:none;
@@ -119,7 +119,7 @@ transition: all .2s ease-in-out;
 text-decoration:none;
 &:hover{
     transition:all .2s ease-in-out;
-    background:#fff;
+    background:${whiteColor};
     color:${primaryColor};
 }
 `

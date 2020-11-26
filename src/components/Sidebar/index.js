@@ -14,21 +14,50 @@ function Sidebar({ toggle, isOpen }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='/about' onClick={toggle}>
+                    <SidebarLink to='home'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        onClick={toggle}>
+                        Home
+                    </SidebarLink>
+                    <SidebarLink to='about'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
+                        onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to='/discover' onClick={toggle}>
+                    <SidebarLink to='discover'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
+                        onClick={toggle}>
                         Discover
                     </SidebarLink>
-                    <SidebarLink to='/services' onClick={toggle}>
+                    <SidebarLink to='services'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
+                        onClick={toggle}>
                         Services
                     </SidebarLink>
-                    <SidebarLink to='/signup' onClick={toggle}>
+                    <SidebarLink to='signup'
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
+                        onClick={toggle}>
                         Sign Up
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/signin' >
+                    <SidebarRoute to='signin' >
                         Sign In
                     </SidebarRoute>
                 </SideBtnWrap>

@@ -18,9 +18,9 @@ justify-content:center;
 align-items:center;
 transition:all .2s ease-in-out;
 &:hover{
-    color:${darkColor};
+    color:${props => props.$hoverDark ? whiteColor : darkColor};
     transition:all .2s ease-in-out;
-    background:${props => props.$primary ? whiteColor : primaryColor};
+    background:${props => props.$hoverDark ? darkColor : whiteColor};
 }
 `
 

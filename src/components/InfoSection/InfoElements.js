@@ -28,7 +28,7 @@ align-items:center;
 grid-template-areas:${({ imgStart }) => imgStart ? `'col2 col1' ` : `'col1 col2'`};
 
 @media screen and (max-width:768px){
-    grid-template-areas : ${({ imgStart }) => imgStart ? `'col1 col2' ` : `'col1 col1' 'col2 col2'`};
+    grid-template-areas : ${({ imgStart }) => imgStart ? `'col2 col2' 'col1 col1' ` : `'col1 col1' 'col2 col2'`};
 }
 `
 
@@ -61,15 +61,23 @@ margin-bottom:1rem;
 `
 
 export const Heading = styled.div`
+
 margin-bottom:1.5rem;
 font-size:3rem;
 line-height:50px;
 font-weight:600;
 color:${({ lightText }) => lightText ? whiteColor : darkColor};
+@media screen and (max-width:768px){
+    font-size:2rem;
+    line-height:36px;
+};
 
 @media screen and (max-width:480px){
-    font-size:2rem
-}
+    font-size:1.6rem;
+    line-height:28px;
+};
+
+
 
 `
 

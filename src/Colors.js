@@ -6,3 +6,5 @@ export const darkColor = 'rgb(1,6,6)';
 export const whiteColor = 'rgb(255,255,255)';
 export const lightBgColor = 'rgb(249,249,249)';
 export const darkBgColor = 'rgb(1,6,6)';
+export const blackColor = 'rgb(0,0,0)';
+export const footerBg = 'rgb(16,21,34)';

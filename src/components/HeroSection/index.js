@@ -10,7 +10,7 @@ function HeroSection() {
         setHover(!hover);
     }
     return (
-        <HeroContainer>
+        <HeroContainer id='home'>
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
@@ -26,6 +26,11 @@ function HeroSection() {
                         onMouseEnter={onHover} onMouseLeave={onHover}
                         to='signup'
                         $primary={true}
+                        $hoverDark={false}
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        exact='true'
                     >
                         Get Started{hover ? <ArrowForward /> : <ArrowRight />}</Button>
                 </HeroBtnWrapper>
