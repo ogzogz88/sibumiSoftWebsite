@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import { primaryColor } from '../../Colors'
 import {
@@ -19,6 +20,10 @@ import {
 } from './FooterElements'
 
 function Footer() {
+
+    const scrollHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <FooterContainer>
             <FooterWrapper>
@@ -71,9 +76,9 @@ function Footer() {
                 <hr style={{ width: '100%', borderColor: primaryColor }} />
                 <SocialMedia>
                     <SocialMediaWrapper>
-                        <SocialLogo to='/'>
+                        <SocialLogo to='/' onClick={scrollHome}>
                             sibumiSoft
-                                </SocialLogo>
+                        </SocialLogo>
                         <WebsiteRights>
                             {new Date().getFullYear()}{' '} All rights reserved by sibumiSoft
                                 </WebsiteRights>

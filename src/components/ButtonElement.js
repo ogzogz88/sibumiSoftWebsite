@@ -5,7 +5,7 @@ import { primaryColor, secondaryColor, darkColor, whiteColor } from '../Colors'
 
 export const Button = styled(Link)`
 border-radius:50px;
-background:${props => props.$primary ? primaryColor : secondaryColor};
+background:${props => props.$primary ? primaryColor : whiteColor};
 white-space:nowrap;
 padding:${props => props.$big ? '1rem 3rem' : '.75rem 2rem'};
 color:${props => props.$dark ? darkColor : whiteColor};
@@ -20,7 +20,7 @@ transition:all .2s ease-in-out;
 &:hover{
     color:${props => props.$hoverDark ? whiteColor : darkColor};
     transition:all .2s ease-in-out;
-    background:${props => props.$hoverDark ? darkColor : whiteColor};
+    background:${props => props.$hoverDark ? darkColor : secondaryColor};
 }
 `
 

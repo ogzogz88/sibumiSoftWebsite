@@ -28,6 +28,7 @@ function Sidebar({ toggle, isOpen }) {
                         duration={700}
                         spy={true}
                         exact='true'
+                        offset={-80}
                         onClick={toggle}>
                         About
                     </SidebarLink>
@@ -36,6 +37,7 @@ function Sidebar({ toggle, isOpen }) {
                         duration={700}
                         spy={true}
                         exact='true'
+                        offset={-80}
                         onClick={toggle}>
                         Discover
                     </SidebarLink>
@@ -44,6 +46,7 @@ function Sidebar({ toggle, isOpen }) {
                         duration={700}
                         spy={true}
                         exact='true'
+                        offset={-80}
                         onClick={toggle}>
                         Services
                     </SidebarLink>
@@ -52,6 +55,7 @@ function Sidebar({ toggle, isOpen }) {
                         duration={700}
                         spy={true}
                         exact='true'
+                        offset={-80}
                         onClick={toggle}>
                         Sign Up
                     </SidebarLink>

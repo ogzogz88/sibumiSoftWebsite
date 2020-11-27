@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements'
 const Navbar = ({ toggle }) => {
@@ -14,12 +15,14 @@ const Navbar = ({ toggle }) => {
 
     }, [])
 
-
+    const scrollHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/'>
+                    <NavLogo to='/' onClick={scrollHome}>
                         sibumiSoft
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
@@ -44,6 +47,7 @@ const Navbar = ({ toggle }) => {
                                 duration={700}
                                 spy={true}
                                 exact='true'
+                                offset={-80}
                                 activeClass="active"
                             >
                                 About
@@ -54,6 +58,7 @@ const Navbar = ({ toggle }) => {
                                 smooth={true}
                                 duration={700}
                                 spy={true}
+                                offset={-80}
                                 exact='true'
                             >
                                 Discover
@@ -64,6 +69,7 @@ const Navbar = ({ toggle }) => {
                                 smooth={true}
                                 duration={700}
                                 spy={true}
+                                offset={-80}
                                 exact='true'
                             >
                                 Services
@@ -74,6 +80,7 @@ const Navbar = ({ toggle }) => {
                                 smooth={true}
                                 duration={700}
                                 spy={true}
+                                offset={-80}
                                 exact='true'
                             >
                                 Sign up
