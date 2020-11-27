@@ -1,3 +1,11 @@
+# sibumiSoft : Responsive website
+
+Singlepage website created using react-smooth-scroll
+
+## Live project
+
+It is deployed with surge and live at http://guarded-wish.surge.sh/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
