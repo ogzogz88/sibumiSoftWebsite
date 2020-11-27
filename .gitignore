@@ -13,7 +13,7 @@
 
 # photos and videos
 /public/images
-/public/src/videos
+/src/videos
 
 # misc
 .DS_Store
