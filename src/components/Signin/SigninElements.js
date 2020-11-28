@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { darkColor, primaryColor, whiteColor } from '../../Colors';
 
 export const Container = styled.div`
-min-height:600px;
+min-height:700px;
 position:fixed;
-bottom:200px;
+padding-bottom:220px;
 left:0;
 right:0;
 top:0;

@@ -19,6 +19,7 @@ background:${whiteColor};
 `
 
 export const ServicesWrapper = styled.div`
+
 max-width:1000px;
 margin:0 auto;
 display:grid;
@@ -35,6 +36,7 @@ padding:0 1rem;
 }
 `
 export const ServicesCard = styled.div`
+
 background:${darkBgColor};
 display:flex;
 flex-direction:column;

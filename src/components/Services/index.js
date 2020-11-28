@@ -8,11 +8,13 @@ const IconServicesWeb = '/images/IconServicesWeb.svg';
 
 
 function Services() {
+    
     return (
 
         <ServicesContainer id='services' style={{ zIndex: 0 }}>
             <ServicesH1>
                 Our Services
+                
             </ServicesH1>
             <ServicesWrapper >
                 <ServicesCard>
@@ -44,7 +46,8 @@ function Services() {
                 </ServicesCard>
 
             </ServicesWrapper>
-            <ParticlesBg type="cobweb" bg={true} />
+            <ParticlesBg color="#7266ba" num={20} type="cobweb" bg={true} />
+
         </ServicesContainer>
 
     )

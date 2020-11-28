@@ -22,8 +22,10 @@ function SignIn() {
                         </Form>
                     </FormContent>
                 </FormWrapper>
-                <ParticlesBg type="polygon" bg={true} />
+                <ParticlesBg color="#7266ba" num={30} type="cobweb" bg={true} />
+
             </Container>
+
         </>
     )
 }
